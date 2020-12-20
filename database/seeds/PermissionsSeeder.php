@@ -42,7 +42,9 @@ class PermissionsSeeder extends Seeder
                 'works',
                 'suppliers',
                 'groups',
-                'pricelists'
+                'pricelists',
+                'productions',
+                'assemblies'
             ];
 
          foreach($models as $model)
