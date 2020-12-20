@@ -16,7 +16,7 @@ class CreateProductionsTable extends Migration
         Schema::create('productions', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('order_id')->nullable()->unsigned();
-            $table->foreign('order_id')->references('id')->on('orders_erp')->onDelete('cascade');
+            $table->foreign('order_id')->references('id')->on('erp_orders')->onDelete('cascade');
             $table->integer('input_id')->nullable()->unsigned();
             $table->foreign('input_id')->references('id')->on('products')->onDelete('cascade');
             $table->smallInteger('input_qta')->unsigned()->default(0);

@@ -27,7 +27,7 @@ class CreateItemsTable extends Migration
             $table->foreign('invoice_id')->references('id')->on('invoices');
             $table->integer('exemption_id')->unsigned()->nullable();
             $table->integer('erp_order_id')->nullable()->unsigned();
-            $table->foreign('erp_order_id')->references('id')->on('erp_order');
+            $table->foreign('erp_order_id')->references('id')->on('erp_orders');
         });
     }
 

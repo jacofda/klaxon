@@ -16,7 +16,7 @@ class CreateAssembliesTable extends Migration
         Schema::create('assemblies', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('order_id')->nullable()->unsigned();
-            $table->foreign('order_id')->references('id')->on('orders_erp')->onDelete('cascade');
+            $table->foreign('order_id')->references('id')->on('erp_orders')->onDelete('cascade');
             $table->integer('product_id')->nullable()->unsigned();
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->integer('company_id')->nullable()->unsigned();

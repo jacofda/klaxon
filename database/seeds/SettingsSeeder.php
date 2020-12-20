@@ -55,7 +55,7 @@ class SettingsSeeder extends Seeder
 
 
          $base = [
-             "rag_soc"=>"KLAXON MOBILITY GmbH",
+            "rag_soc"=>"KLAXON MOBILITY GmbH",
             "indirizzo"=>"Industriestrasse, 1",
             "cap"=>"9601",
             "provincia"=>"",

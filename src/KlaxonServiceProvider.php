@@ -47,7 +47,7 @@ class KlaxonServiceProvider extends ServiceProvider
               __DIR__.'/../config/invoice.php' => config_path('invoice.php'),
               __DIR__.'/../config/fe.php' => config_path('fe.php'),
               __DIR__.'/../config/flare.php' => config_path('flare.php'),
-          ], 'core.config');
+          ], 'klaxon.config');
 
 
         }

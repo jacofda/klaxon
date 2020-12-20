@@ -35,6 +35,7 @@ class CreateProductsTable extends Migration
             $table->boolean('active')->default(true);
             // erp
             $table->boolean('acquistabile')->default(true);
+            $table->boolean('has_sn')->default(false);
             $table->smallInteger('qta_confezione')->unsigned()->nullable();
             $table->smallInteger('tempo_fornitura')->unsigned()->nullable();
             $table->float('costo_fornitura', 8, 4)->nullable();
